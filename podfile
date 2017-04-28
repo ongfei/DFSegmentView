@@ -1,0 +1,5 @@
+target 'DFSegmentView' do
+
+pod 'Masonry'
+
+end
