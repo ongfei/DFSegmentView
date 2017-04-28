@@ -24,6 +24,11 @@
  */
 - (UIViewController *)subViewControllerWithIndex:(NSInteger)index;
 
+@optional
+/**
+ *  点击导航栏的回调
+ */
+- (void)headTitleSelectWithIndex:(NSInteger)index;
 
 
 @end
