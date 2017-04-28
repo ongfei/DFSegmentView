@@ -56,4 +56,10 @@
 }
 
 
+- (void)headTitleSelectWithIndex:(NSInteger)index {
+    
+    DLog(@"---%ld",index);
+}
+
+
 @end
