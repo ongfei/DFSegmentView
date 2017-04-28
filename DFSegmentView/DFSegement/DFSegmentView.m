@@ -120,7 +120,12 @@
 
 - (CGSize)dfSegmentItemSimeWithIndex:(NSInteger)index {
     
-    return CGSizeMake(60, 30);
+    NSString *str = [[self.delegate titlesForDFSegmentViewHeadView] objectAtIndex:index];
+    
+    UIFont * font = [UIFont systemFontOfSize:13];
+    CGSize size = [str sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil]];
+    
+    return CGSizeMake(size.width + 25, 30);
 }
 
 - (NSString *)textForCellWithIndex:(NSInteger)index {
