@@ -136,6 +136,11 @@
 - (void)selectWithIndex:(NSInteger)index {
     
     [self.scrollBg setContentOffset:CGPointMake(ScreenWidth * index, 0) animated:NO];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(headTitleSelectWithIndex:)]) {
+        
+        [self.delegate headTitleSelectWithIndex:index];
+    }
 
 }
 
