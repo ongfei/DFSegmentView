@@ -85,9 +85,19 @@
         cell.lineView.backgroundColor = self.linelColor;
         cell.labelText.textColor = self.textLabelColor;
         
+         [UIView animateWithDuration:0.3 animations:^{
+            cell.lineView.transform = CGAffineTransformMakeScale(1.2, 1.2);
+            cell.labelText.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        }];
+
     }else {
         cell.lineView.backgroundColor = [UIColor clearColor];
         cell.labelText.textColor = [UIColor blackColor];
+        
+        cell.lineView.transform = CGAffineTransformMakeScale(1.0, 1.0);
+        cell.labelText.transform = CGAffineTransformMakeScale(1.0, 1.0);
+
+
     }
     
     return cell;
