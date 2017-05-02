@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    DFSegmentView *segment = [[DFSegmentView alloc] initWithFrame:CGRectZero andDelegate:self andTitlArr:@[@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你"]];
+    
     DFSegmentView *segment = [DFSegmentView new];
     
     segment.backgroundColor = [UIColor redColor];
@@ -34,11 +36,8 @@
     
     segment.delegate = self;
 
-}
-
-- (NSArray *)titlesForDFSegmentViewHeadView {
-    
-    return @[@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你",@"你撒你"];
+    segment.reloadTitleArr = @[@"aaa",@"qqq"];
+    [segment reloadData];
 }
 
 - (UIViewController *)superViewController {
@@ -58,7 +57,8 @@
 
 - (void)headTitleSelectWithIndex:(NSInteger)index {
     
-    DLog(@"---%ld",index);
+
+    NSLog(@"---%ld",index);
 }
 
 

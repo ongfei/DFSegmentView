@@ -14,7 +14,7 @@
 /**
  *  导航栏数组
  */
-- (NSArray *)titlesForDFSegmentViewHeadView;
+//- (NSArray *)titlesForDFSegmentViewHeadView;
 /**
  *  指明父控制器
  */
@@ -35,7 +35,6 @@
 @interface DFSegmentView : UIView
 
 @property (nonatomic, weak) id<DFSegmentViewDelegate> delegate;
-
 /**
  *  设置导航条高
  */
@@ -48,5 +47,13 @@
  *  设置导航条下滑线颜色
  */
 @property (nonatomic, copy) UIColor *headViewLinelColor;
+/**
+ *  reloadTitleArr 赋值后要调用 reloadData
+ */
+@property (nonatomic, strong) NSArray *reloadTitleArr;
+
+- (instancetype)initWithFrame:(CGRect)frame andDelegate:(id)delegate andTitlArr:(NSArray *)titleArr;
+
+- (void)reloadData;
 
 @end

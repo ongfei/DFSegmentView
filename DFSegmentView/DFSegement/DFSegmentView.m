@@ -16,13 +16,24 @@
 
 @property (nonatomic, strong) UIScrollView *scrollBg;
 
+@property (nonatomic, strong) NSArray *titleArr;
+
 @end
 
 @implementation DFSegmentView
 
--(void)setDelegate:(id<DFSegmentViewDelegate>)delegate {
-    _delegate = delegate;
-    [self prepareLayout];
+- (instancetype)initWithFrame:(CGRect)frame andDelegate:(id)delegate andTitlArr:(NSArray *)titleArr {
+    
+    if (self = [super initWithFrame:frame]) {
+        
+        _titleArr = titleArr;
+        
+        _delegate = delegate;
+        
+        [self prepareLayout];
+    }
+    
+    return self;
 }
 
 - (void)prepareLayout {
@@ -66,7 +77,7 @@
     }];
     
     UIView *lastView = nil;
-    for (int i = 0 ; i < [[self.delegate titlesForDFSegmentViewHeadView] count]; i++) {
+    for (int i = 0 ; i < [self.titleArr count]; i++) {
         
 //        DFSegmentBaseController *baseVC = [DFSegmentBaseController new];
         UIViewController *baseVC = [self.delegate subViewControllerWithIndex:i];
@@ -103,7 +114,27 @@
 
 }
 
-
+- (void)reloadData {
+    
+    if (self.reloadTitleArr.count <= 0) {
+        return;
+    }
+    
+    for (UIViewController *vc in [[self.delegate superViewController] childViewControllers]) {
+        [vc removeFromParentViewController];
+    }
+    
+    for (id subV in self.subviews) {
+        
+        [subV removeFromSuperview];
+    }
+    
+    self.titleArr = self.reloadTitleArr;
+    
+    [self prepareLayout];
+    
+    
+}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     
@@ -115,12 +146,12 @@
 
 - (NSInteger)dfSegmentNumber {
     
-    return [[self.delegate titlesForDFSegmentViewHeadView] count];
+    return [self.titleArr count];
 }
 
 - (CGSize)dfSegmentItemSimeWithIndex:(NSInteger)index {
     
-    NSString *str = [[self.delegate titlesForDFSegmentViewHeadView] objectAtIndex:index];
+    NSString *str = [self.titleArr objectAtIndex:index];
     
     UIFont * font = [UIFont systemFontOfSize:13];
     CGSize size = [str sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil]];
@@ -130,7 +161,7 @@
 
 - (NSString *)textForCellWithIndex:(NSInteger)index {
     
-    return [[self.delegate titlesForDFSegmentViewHeadView] objectAtIndex:index];
+    return [self.titleArr objectAtIndex:index];
 }
 
 - (void)selectWithIndex:(NSInteger)index {
