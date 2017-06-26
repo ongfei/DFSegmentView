@@ -46,6 +46,18 @@
 }
 
 - (UIViewController *)subViewControllerWithIndex:(NSInteger)index {
+/*
+    如果有特殊的控制器 可以在这里判断操作
+ 
+    如果这样操作了,获取的时候 就要注意了
+ 
+    if (index == 2) {
+        
+        SpecificVC *specificVC = [SpecificVC new];
+        
+        return specificVC;
+    }
+*/
     
     DFSegmentBaseController *baseVC = [DFSegmentBaseController new];
     
@@ -57,7 +69,10 @@
 
 - (void)headTitleSelectWithIndex:(NSInteger)index {
     
-
+//  在这里可以获取到当前的baseViewController
+//  对VC里面进行赋值 调方法进行网络请求或者一些逻辑操作
+//  可以在当前控制器增加属性 currentIndex = index 在当前控制器 随时都可以用currentIndex获取到baseViewController
+    
     NSLog(@"---%ld",index);
 }
 
