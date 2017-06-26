@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 
 #define ScreenWidth ([[UIScreen mainScreen] bounds].size.width)
 

@@ -14,12 +14,12 @@
 		A31289D11EB3234300F5C702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31289C01EB3234300F5C702 /* Assets.xcassets */; };
 		A31289D21EB3234300F5C702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31289C11EB3234300F5C702 /* LaunchScreen.storyboard */; };
 		A31289D31EB3234300F5C702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31289C31EB3234300F5C702 /* Main.storyboard */; };
-		A31289D41EB3234300F5C702 /* DFSegmentBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31289C71EB3234300F5C702 /* DFSegmentBaseController.m */; };
-		A31289D51EB3234300F5C702 /* DFSegmentHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A31289C91EB3234300F5C702 /* DFSegmentHeadView.m */; };
-		A31289D61EB3234300F5C702 /* DFSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A31289CB1EB3234300F5C702 /* DFSegmentView.m */; };
 		A31289D71EB3234300F5C702 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A31289CC1EB3234300F5C702 /* Info.plist */; };
 		A31289D81EB3234300F5C702 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A31289CD1EB3234300F5C702 /* main.m */; };
 		A31289D91EB3234300F5C702 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31289CF1EB3234300F5C702 /* ViewController.m */; };
+		A382BC281F00E8510010BC05 /* DFSegmentBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = A382BC271F00E8510010BC05 /* DFSegmentBaseController.m */; };
+		A382BC2E1F00E96F0010BC05 /* DFSegmentHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A382BC2B1F00E96F0010BC05 /* DFSegmentHeadView.m */; };
+		A382BC2F1F00E96F0010BC05 /* DFSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A382BC2D1F00E96F0010BC05 /* DFSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,16 +55,16 @@
 		A31289C01EB3234300F5C702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A31289C21EB3234300F5C702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31289C41EB3234300F5C702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A31289C61EB3234300F5C702 /* DFSegmentBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSegmentBaseController.h; sourceTree = "<group>"; };
-		A31289C71EB3234300F5C702 /* DFSegmentBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSegmentBaseController.m; sourceTree = "<group>"; };
-		A31289C81EB3234300F5C702 /* DFSegmentHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSegmentHeadView.h; sourceTree = "<group>"; };
-		A31289C91EB3234300F5C702 /* DFSegmentHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSegmentHeadView.m; sourceTree = "<group>"; };
-		A31289CA1EB3234300F5C702 /* DFSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSegmentView.h; sourceTree = "<group>"; };
-		A31289CB1EB3234300F5C702 /* DFSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSegmentView.m; sourceTree = "<group>"; };
 		A31289CC1EB3234300F5C702 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A31289CD1EB3234300F5C702 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A31289CE1EB3234300F5C702 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A31289CF1EB3234300F5C702 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A382BC261F00E8510010BC05 /* DFSegmentBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSegmentBaseController.h; sourceTree = "<group>"; };
+		A382BC271F00E8510010BC05 /* DFSegmentBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSegmentBaseController.m; sourceTree = "<group>"; };
+		A382BC2A1F00E96F0010BC05 /* DFSegmentHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSegmentHeadView.h; sourceTree = "<group>"; };
+		A382BC2B1F00E96F0010BC05 /* DFSegmentHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSegmentHeadView.m; sourceTree = "<group>"; };
+		A382BC2C1F00E96F0010BC05 /* DFSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSegmentView.h; sourceTree = "<group>"; };
+		A382BC2D1F00E96F0010BC05 /* DFSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSegmentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 		A31289BD1EB3234300F5C702 /* DFSegmentView */ = {
 			isa = PBXGroup;
 			children = (
-				A31289C51EB3234300F5C702 /* DFSegement */,
+				A382BC291F00E96F0010BC05 /* DFSegment */,
 				A31289BE1EB3234300F5C702 /* AppDelegate.h */,
 				A31289BF1EB3234300F5C702 /* AppDelegate.m */,
 				A31289C01EB3234300F5C702 /* Assets.xcassets */,
@@ -155,21 +155,21 @@
 				A31289CD1EB3234300F5C702 /* main.m */,
 				A31289CE1EB3234300F5C702 /* ViewController.h */,
 				A31289CF1EB3234300F5C702 /* ViewController.m */,
+				A382BC261F00E8510010BC05 /* DFSegmentBaseController.h */,
+				A382BC271F00E8510010BC05 /* DFSegmentBaseController.m */,
 			);
 			path = DFSegmentView;
 			sourceTree = "<group>";
 		};
-		A31289C51EB3234300F5C702 /* DFSegement */ = {
+		A382BC291F00E96F0010BC05 /* DFSegment */ = {
 			isa = PBXGroup;
 			children = (
-				A31289C61EB3234300F5C702 /* DFSegmentBaseController.h */,
-				A31289C71EB3234300F5C702 /* DFSegmentBaseController.m */,
-				A31289C81EB3234300F5C702 /* DFSegmentHeadView.h */,
-				A31289C91EB3234300F5C702 /* DFSegmentHeadView.m */,
-				A31289CA1EB3234300F5C702 /* DFSegmentView.h */,
-				A31289CB1EB3234300F5C702 /* DFSegmentView.m */,
+				A382BC2A1F00E96F0010BC05 /* DFSegmentHeadView.h */,
+				A382BC2B1F00E96F0010BC05 /* DFSegmentHeadView.m */,
+				A382BC2C1F00E96F0010BC05 /* DFSegmentView.h */,
+				A382BC2D1F00E96F0010BC05 /* DFSegmentView.m */,
 			);
-			path = DFSegement;
+			path = DFSegment;
 			sourceTree = "<group>";
 		};
 		B8D93F97E62CFDB6A8780DCC /* Frameworks */ = {
@@ -362,11 +362,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A382BC281F00E8510010BC05 /* DFSegmentBaseController.m in Sources */,
 				A31289D91EB3234300F5C702 /* ViewController.m in Sources */,
+				A382BC2F1F00E96F0010BC05 /* DFSegmentView.m in Sources */,
 				A31289D81EB3234300F5C702 /* main.m in Sources */,
-				A31289D51EB3234300F5C702 /* DFSegmentHeadView.m in Sources */,
-				A31289D41EB3234300F5C702 /* DFSegmentBaseController.m in Sources */,
-				A31289D61EB3234300F5C702 /* DFSegmentView.m in Sources */,
+				A382BC2E1F00E96F0010BC05 /* DFSegmentHeadView.m in Sources */,
 				A31289D01EB3234300F5C702 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

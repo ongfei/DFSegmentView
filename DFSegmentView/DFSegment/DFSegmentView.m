@@ -8,7 +8,6 @@
 
 #import "DFSegmentView.h"
 #import "DFSegmentHeadView.h"
-#import "DFSegmentBaseController.h"
 
 @interface DFSegmentView ()<DFSegmentHeadViewDelegate,UIScrollViewDelegate>
 
@@ -79,7 +78,6 @@
     UIView *lastView = nil;
     for (int i = 0 ; i < [self.titleArr count]; i++) {
         
-//        DFSegmentBaseController *baseVC = [DFSegmentBaseController new];
         UIViewController *baseVC = [self.delegate subViewControllerWithIndex:i];
         
         [[self.delegate superViewController] addChildViewController:baseVC];

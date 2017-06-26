@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 
-#import "DFSegement/DFSegmentView.h"
+#import "DFSegmentView.h"
 #import "DFSegmentBaseController.h"
 
 @interface ViewController ()<DFSegmentViewDelegate>
